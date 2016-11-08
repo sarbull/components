@@ -1,0 +1,4 @@
+{
+  "name": "conditioner.js",
+  "url": "https://github.com/rikschennink/conditioner-bower.git"
+}

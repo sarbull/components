@@ -1,0 +1,4 @@
+{
+  "name": "jquery.toc",
+  "url": "https://github.com/ndabas/toc.git"
+}

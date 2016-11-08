@@ -1,0 +1,4 @@
+{
+  "name": "jquery.rest",
+  "url": "https://github.com/jpillora/jquery.rest.git"
+}
