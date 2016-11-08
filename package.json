@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "dependencies": {
+    "axios": "^0.15.2",
+    "migrate": "^0.2.3",
+    "rimraf": "^2.5.4"
+  },
+  "scripts": {
+    "reset": "git checkout -f HEAD -- migrations/.migrate packages",
+    "migrate": "migrate"
+  }
+}
