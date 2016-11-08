@@ -6,24 +6,26 @@
 
 This repository contains list of Bower components and their metadata (currently only url of main repository).
 
-All components reside in `/packages/<COMPONENT>` folder, and have following structure:
+All components reside in `/packages` directory, each of them with following structure:
 
-```
+```js
 {
-  // Name of package (needed to maintain backward compatibility with old registry)
+  // REQUIRED: Name of package (needed to maintain backward compatibility with old registry)
   "name": "jquery",
-  // Repository URL that Bower should use to resolve package
+  // REQUIRED: Repository URL that Bower should use to resolve package
   "url": "https://github.com/jquery/jquery-dist.git"
 }
 ```
 
+We will consider adding extra metadata fields in the future. If you have an idea, please [open an issue](https://github.com/bower/components/issues)
+
 ## Usage
 
-Registry is versioned, starting with `1.0.0` that reflects state of old registry at the time it was deprecated. You can use this version as starting point, and gradually "bump" registry version in `.bowerrc`, at the same time ensuring projects still works. Please see *Migration* section to see how you can point your Bower to this registry.
+Registry is versioned, starting with `1.0.0` that reflects state of old registry at the time it was frozen. You can use this version as starting point, and gradually "bump" registry version in `.bowerrc`, at the same time ensuring projects still works. Please see *Migration* section to see how you can point your Bower to the new registry.
 
-We **highly discourage** using `master` version of this repository, and it can change unpredictable. Instead, choose appripriate tag from [available releases](https://github.com/bower/components/releases), and set registry url as follows:
+We **highly discourage** using `master` version of this repository, as it can change in breaking ways at any time. Instead, please choose appropriate tag from [available releases](https://github.com/bower/components/releases), and set registry url as follows:
 
-```json
+```js
 {
   "registry": "https://raw.githubusercontent.com/bower/components/x.x.x"
 }
@@ -31,7 +33,7 @@ We **highly discourage** using `master` version of this repository, and it can c
 
 ## Migration
 
-The structure of this repository matches old registry's API, and `1.0.0` tag reflects its frozen state. It means you can (and should) seamlessly migrate by creating or updating your `.bowerrc` file (either in project's directory or home directory):
+The structure of this repository matches the API of old registry. Also, `1.0.0` tag reflects its frozen state. It means you can (and should) seamlessly migrate by creating or updating your `.bowerrc` file (either in project's directory or home directory):
 
 ```json
 {
@@ -39,7 +41,7 @@ The structure of this repository matches old registry's API, and `1.0.0` tag ref
 }
 ```
 
-This change should be 100% backward-compatible with most of old clients. **At some point we will turn off old registry, so please make this change as soon as possible**.
+**At some point we will turn off old registry, so please make this change as soon as possible**. Switching bower the the `1.0.0` tag of new registry should be 100% backward-compatible, even for old Bower clients.
 
 If you also want to preserve search / register / unregister functionality (please mind, it might be deprecated):
 
@@ -56,7 +58,7 @@ If you also want to preserve search / register / unregister functionality (pleas
 
 ## Modifying registry
 
-We opt-out of changing entries in `/packages` folder directly. Instead, we encourage contributors to create migration scripts in `/migrations` directory that updates entries appropriately. PRs proposing these migrations shoudn't include changes in `/packages` directory. Maintainers of Bower Components are responsible for reviewing migrations, and running them periodically.
+We opt-out of changing entries in `/packages` folder directly. Instead, we encourage contributors to create migration scripts in `/migrations` directory that update packages appropriately. Pull Requests proposing these migrations shoudn't include any changes in `/packages` directory. Only Maintainers of Bower Components are responsible for reviewing migrations, and running them periodically.
 
 Respository uses [semver](http://semver.org/) for versioning, and uses the same nomenclature for migrations:
 
@@ -73,7 +75,7 @@ You can fork this registry and point Bower to it instead, like so:
 }
 ```
 
-Please [e-mail us](email:team@bower.io) if you're interested in registry in non-public repository.
+Please [e-mail us](email:team@bower.io) if you're interested in private registry in non-public repository.
 
 ## License
 
