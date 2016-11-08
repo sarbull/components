@@ -21,9 +21,9 @@ We will consider adding extra metadata fields in the future. If you have an idea
 
 ## Usage
 
-Registry is versioned, starting with `1.0.0` that reflects state of old registry at the time it was frozen. You can use this version as starting point, and gradually "bump" registry version in `.bowerrc`, at the same time ensuring projects still works. Please see *Migration* section to see how you can point your Bower to the new registry.
+Registry is tagged, starting with `1.0.0` that reflects state of old registry at the time it was frozen. You can use this tag as starting point, and gradually "bump" registry tag in `.bowerrc`, at the same time ensuring projects still works. Please see *Migration* section to see how you can point your Bower to the new registry.
 
-We **highly discourage** using `master` version of this repository, as it can change in breaking ways at any time. Instead, please choose appropriate tag from [available releases](https://github.com/bower/components/releases), and set registry url as follows:
+We **highly discourage** using `master` tag of this repository, as it can change in breaking ways at any time. Instead, please choose appropriate tag from [available releases](https://github.com/bower/components/releases), and set registry url as follows:
 
 ```js
 {
@@ -60,7 +60,7 @@ If you also want to preserve search / register / unregister functionality (pleas
 
 We opt-out of changing entries in `/packages` folder directly. Instead, we encourage contributors to create migration scripts in `/migrations` directory that update packages appropriately. Pull Requests proposing these migrations shoudn't include any changes in `/packages` directory. Only Maintainers of Bower Components are responsible for reviewing migrations, and running them periodically.
 
-Respository uses [semver](http://semver.org/) for versioning, and uses the same nomenclature for migrations:
+Respository uses [semver](http://semver.org/) for tagging, and uses the same nomenclature for migrations:
 
 - *major* migrations can break bower client, running them results in major semver bump
 - *minor* migrations are 100% backward-compatible, and add extra stuff, they result in minor semver bump
