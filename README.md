@@ -6,6 +6,8 @@
 
 This repository contains list of Bower components and their metadata (currently only url of main repository).
 
+Please read [this issue](https://github.com/bower/bower/issues/2388) for reasoning and discussion.
+
 All components reside in `/packages` directory, each of them with following structure:
 
 ```js
