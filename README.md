@@ -65,6 +65,8 @@ Respository uses [semver](http://semver.org/) for tagging, and uses the same nom
 - *major* migrations can break bower client, running them results in major semver bump
 - *minor* migrations are 100% backward-compatible, and add extra stuff, they result in minor semver bump
 
+**Currently registry contains mixed-cased packages like `jquery` and `jQuery`, so you need to develop this repository on case-sensitive filesystem. This excludes default OSX and Windows installations. Ubuntu is OK.**
+
 ## Private registry
 
 You can fork this registry and point Bower to it instead, like so:
