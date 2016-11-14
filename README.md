@@ -50,7 +50,7 @@ If you also want to preserve search / register / unregister functionality (pleas
 ```json
 {
   "registry": {
-    "default": "https://raw.githubusercontent.com/bower/components/master",
+    "default": "https://raw.githubusercontent.com/bower/components/1.0.0",
     "search": "https://bower.herokuapp.com",
     "register": "https://bower.herokuapp.com",
     "publish": "https://bower.herokuapp.com"
