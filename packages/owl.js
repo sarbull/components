@@ -1,4 +1,4 @@
 {
   "name": "owl.js",
-  "url": "https://github.com/omegascorp/owl.git"
+  "url": "https://github.com/owljsorg/owl.js.git"
 }

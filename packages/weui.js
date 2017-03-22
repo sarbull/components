@@ -1,4 +1,4 @@
 {
   "name": "weui.js",
-  "url": "https://github.com/progrape/weui.js.git"
+  "url": "https://github.com/weui/weui.js.git"
 }

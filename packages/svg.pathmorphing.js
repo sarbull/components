@@ -1,4 +1,4 @@
 {
   "name": "svg.pathmorphing.js",
-  "url": "https://github.com/fuzzyma/svg.pathmorphing.js.git"
+  "url": "https://github.com/svgdotjs/svg.pathmorphing.js.git"
 }

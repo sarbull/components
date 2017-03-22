@@ -1,4 +1,4 @@
 {
   "name": "svg.draw.js",
-  "url": "https://github.com/Fuzzyma/svg.draw.js.git"
+  "url": "https://github.com/svgdotjs/svg.draw.js.git"
 }

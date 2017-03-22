@@ -1,0 +1,4 @@
+{
+  "name": "mqtt",
+  "url": "https://github.com/mqttjs/MQTT.js.git"
+}

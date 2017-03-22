@@ -1,4 +1,4 @@
 {
   "name": "siret.js",
-  "url": "https://github.com/redcatphp/siret.js.git"
+  "url": "https://github.com/redcatjs/siret.js.git"
 }

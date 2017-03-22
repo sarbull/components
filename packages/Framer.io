@@ -1,4 +1,4 @@
 {
   "name": "Framer.io",
-  "url": "https://github.com/claudemyburgh/Framer.git"
+  "url": "https://github.com/claudemyburgh/Framer.io.git"
 }

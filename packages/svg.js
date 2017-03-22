@@ -1,4 +1,4 @@
 {
   "name": "svg.js",
-  "url": "https://github.com/wout/svg.js.git"
+  "url": "https://github.com/svgdotjs/svg.js.git"
 }

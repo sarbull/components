@@ -1,4 +1,4 @@
 {
   "name": "svg.textmorph.js",
-  "url": "https://github.com/fuzzyma/svg.textmorph.js.git"
+  "url": "https://github.com/svgdotjs/svg.textmorph.js.git"
 }
